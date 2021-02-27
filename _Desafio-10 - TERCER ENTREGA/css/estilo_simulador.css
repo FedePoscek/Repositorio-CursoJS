@@ -1,0 +1,466 @@
+/* VARIABLES DE COLORES */
+
+:root {
+    --color-principal: #ab987a;
+    --color-principal-claro: #c7aa67;
+    --color-principal-oscuro: #55492e;
+    --color-verde: #1bc43f;
+    --color-verde-oscuro: #12af34;
+    --color-rojo: #ff1e27;
+    --color-rojo-oscuro: #df131a;
+    --color-blanco: white;
+    --color-negro: #302b22;
+    --color-gris: hsl(22, 31%, 75%);
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+/* INICIO BODY */
+html {
+    scroll-behavior: smooth;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    
+}
+body {
+    background-color: #373737;
+     overflow-x: hidden;
+     
+}
+
+/* FIN BODY */
+
+
+/* INICIO PLACA CONTACTO */
+
+#contacto {
+    padding: 3em 0em 5em 0em;
+}
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 1em 0em;
+}
+.titulo {
+    color: var(--color-principal);
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    font-weight: 300;
+    text-align: center;
+}
+.titulo-bajada {
+    background-color: red;
+    color: yellow;
+    font-size: 0.85em;
+    margin-bottom: 0.2em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.25em;
+    padding: 1em;
+}
+
+.form-datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos-usuario {
+    width: 40%;
+    height: 100%;
+    padding: 0 1%;
+}
+
+.Contacto-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.Contacto-boton {
+    height: 0.5em;
+    width: inherit;
+    background-color: whitesmoke;
+    /* border: 0.075em solid var(--color-principal); */
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.75em;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 1em;
+    text-decoration: none;
+}
+.Contacto-label, .Contacto-label-botones {
+    height: 0.75em;
+    width: inherit;
+    color: var(--color-principal);
+    background-color: transparent;
+    padding: 0.75em 0.5em 0.4em 0;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+.Contacto-boton:hover, .menu-desplegable:hover {
+    font-weight: 300;
+} 
+.Contacto-boton:focus, .menu-desplegable:focus{
+    color: var(--color-principal-oscuro);
+    outline:none;
+    outline-width: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.Contacto-boton:enabled, .menu-desplegable:enabled {
+    color: var(--color-principal-oscuro);
+}
+.Contacto-boton::placeholder, .menu-desplegable::placeholder {
+    color: var(--color-gris);
+    font-size: 0.8em;
+}
+.Contacto-boton:focus::placeholder {
+    color: var(--color-principal-claro);
+
+}
+.botones-comando {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+.boton-envio-unoMas {
+    padding: 0.5em 0.5em 0 0;
+}
+.boton-reinicio {
+    display: none;
+    padding: 0.5em 0 0 0.5em;
+}
+.Contacto-boton-envio {
+    width: 15em;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.75em;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--color-blanco);
+    background-color: var(--color-verde);
+    outline: 0px;
+}
+.Contacto-boton-otroEnvio {
+    display: none;
+    width: 15em;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.75em;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--color-blanco);
+    background-color: var(--color-verde);
+    outline: 0px;
+}
+.Contacto-boton-reinicio {
+    width: 15em;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.75em;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--color-blanco);
+    background-color: var(--color-rojo);
+    outline: 0px;
+}
+.Contacto-boton-envio:hover, .Contacto-boton-otroEnvio:hover {
+    background-color: var(--color-verde-oscuro);
+    color: var(--color-blanco);
+    font-weight: 300;
+    cursor: pointer;
+}
+.Contacto-boton-reinicio:hover {
+    background-color: var(--color-rojo-oscuro);
+    color: var(--color-blanco);
+    font-weight: 300;
+    cursor: pointer;
+}
+.Boton-borrar {
+    position: absolute;
+    right: 31%;
+    border: 0.07em solid var(--color-rojo);
+    border-radius: 0.2em;
+    padding: 0.2em 0.45em;
+    margin: 0em 0em;
+    font-weight: 300;
+    font-size: 0.75em;
+    text-decoration: none;
+    color: var(--color-blanco);
+    background-color: var(--color-rojo);
+    outline: 0px;
+}
+.Boton-borrar:hover {
+    background-color: var(--color-rojo-oscuro);
+    border: 0.07em solid var(--color-rojo-oscuro);
+    color: var(--color-blanco);
+    font-weight: 300;
+    cursor: pointer;
+}
+.error {
+    border-bottom: 0.07em solid var(--color-rojo);
+    padding: 0.75em;
+    height: 1em;
+    width: inherit;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 1.25em;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--color-rojo);
+}
+.Contacto-boton-error::placeholder {
+    color: var(--color-rojo);
+}
+.menu-desplegable select {
+    width: 100%; 
+    height: 2.5em;
+    background-color: whitesmoke;
+    /* border: 0.075em solid var(--color-principal); */
+    border: none;
+    color: var(--color-gris);
+    border-radius: 0.2em;
+    padding: 0 2em 0 0.5em ;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 0.8em;
+    text-decoration: none;
+    text-overflow: '';
+    -webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+  
+.menu-desplegable:focus {
+    color: var(--color-principal-oscuro);
+    outline:none;
+    outline-width: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+hr, #hr {
+    color: var(--color-principal);    
+}
+
+/* Customize the label (the container) */
+.Container-check {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 0.75em;
+    width: inherit;
+    color: var(--color-principal);
+    background-color: transparent;
+    padding: 1.5em 0.5em 0.4em 3em;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+  
+  /* Hide the browser's default checkbox */
+.Container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+  /* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 1em;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    background-color: #eee;
+    border-radius: 0.25em;
+}
+  
+  /* On mouse-over, add a grey background color */
+.Container-check:hover input ~ .checkmark {
+    background-color: var(--color-principal-oscuro);
+}
+  
+  /* When the checkbox is checked, add a blue background */
+.Container-check input:checked ~ .checkmark {
+    background-color: var(--color-principal);
+}
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the checkmark when checked */
+.Container-check input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the checkmark/indicator */
+.Container-check .checkmark:after {
+    left: 9px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.textoCheckEstilo {
+    padding: 0.75em 0 0.75em 0;
+    font-weight: 300;
+    font-size: 0.85em;
+}
+
+#valorCompra, #valorVenta {
+    display: inline-block;
+}
+
+/* FIN PLACA CONTACTO */
+
+/* INICIO PLACA INFO */
+.form-items {
+    border-top: 0.075em solid var(--color-principal);
+    background-color: transparent;
+    width: 40%;
+    height: auto;
+}
+.containerInfo {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.25em;
+    color:var(--color-principal);
+    margin: 0.5em;
+}
+.containerInfoBold {
+    font-weight: 700;
+}
+.containerInfoSmall {
+    font-weight: 700;
+    font-size: 0.8em;
+    line-height: 1.25em;
+    color:var(--color-principal);
+    margin: 0.25em;
+}
+/* FIN PLACA INFO */
+
+/* INICIO FOOTER */
+
+.footer-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, var(--color-principal), var(--color-principal-oscuro));
+    bottom: 0px;
+}
+.footer-text-grande {
+    color: var(--color-blanco);
+    font-weight: 300;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1em;
+    margin: 1.5% 5% 1% 5%;
+}
+.footer-text {
+    color: var(--color-blanco);
+    font-weight: 300;
+    font-size: 0.5em;
+    text-decoration: none;
+    text-align: justify;
+    line-height: 1.5em;
+    margin: 1% 25%;
+}
+
+/* FIN FOOTER */
+
+
+
+/* MEDIA CONTACTOS */
+
+@media only screen and (max-width: 800px){
+    .titulo {
+        font-size: 2.5em;
+        max-width: 85%;
+    }
+
+    .form-datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Contacto-form {
+        max-width: 85%;
+    }
+    .form-datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-items {
+        width: 72%;
+    }
+    .datos-usuario {
+        width: 85%;
+    }
+    .footer-text-grande {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+    .footer-text {
+        font-size: 0.5em;
+        line-height: 1.5em;
+        margin: 1% 10%;
+    }
+    .Boton-borrar {
+        right: 15%;
+    }
+}
+
+
+/* MEDIA FOOTER */
+
+@media only screen and (max-width: 500px){
+    .footer-text {
+        font-size: 0.5em;
+        line-height: 1.5em;
+        margin: 1% 10%;
+    }
+}
