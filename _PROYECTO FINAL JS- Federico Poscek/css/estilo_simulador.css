@@ -1,0 +1,500 @@
+/* VARIABLES DE COLORES */
+
+:root {
+    --color-principal: #ab987a;
+    --color-principal-claro: #c7aa67;
+    --color-principal-claroPlus: #cabea0;
+    --color-principal-oscuro: #55492e;
+    --color-verde: #1bc43f;
+    --color-verde-oscuro: #12af34;
+    --color-rojo: #ff1e27;
+    --color-rojo-oscuro: #df131a;
+    --color-blanco: white;
+    --color-negro: #302b22;
+    --color-gris: hsl(25, 30%, 57%);
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+/* INICIO BODY */
+html {
+    scroll-behavior: smooth;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    
+}
+body {
+    background-color: #373737;
+     overflow-x: hidden;
+     
+}
+
+/* FIN BODY */
+
+
+/* INICIO PLACA CONTACTO */
+
+#contacto {
+    padding: 3em 0em 5em 0em;
+}
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 1em 0em;
+}
+.titulo {
+    color: var(--color-principal);
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    font-weight: 300;
+    text-align: center;
+}
+.titulo-bajada {
+    background-color: red;
+    color: yellow;
+    font-size: 0.85em;
+    margin-bottom: 0.2em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.25em;
+    padding: 1em;
+}
+
+.form-datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos-usuario {
+    width: 40%;
+    height: 100%;
+    padding: 0 1%;
+}
+
+.Contacto-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.Contacto-boton {
+    height: 0.5em;
+    width: inherit;
+    background-color: whitesmoke;
+    /* border: 0.075em solid var(--color-principal); */
+    border: 2px solid white;
+    border-radius: 0.2em;
+    padding: 0.75em;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 1em;
+    text-decoration: none;
+}
+.Contacto-label, .Contacto-label-botones {
+    height: 0.75em;
+    width: inherit;
+    color: var(--color-principal);
+    background-color: transparent;
+    padding: 0.75em 0.5em 0.4em 0;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+.Contacto-boton:hover, .menu-desplegable:hover {
+    font-weight: 300;
+} 
+.Contacto-boton:focus, .menu-desplegable:focus{
+    color: var(--color-principal-oscuro);
+    outline:none;
+    outline-width: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.Contacto-boton:enabled, .menu-desplegable:enabled {
+    color: var(--color-principal-oscuro);
+}
+.Contacto-boton::placeholder, .menu-desplegable::placeholder {
+    color: var(--color-gris);
+    font-size: 0.8em;
+}
+.Contacto-boton:focus::placeholder {
+    color: var(--color-principal-claroPlus);
+
+}
+.botones-comando {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+.boton-envio-unoMas {
+    padding: 0.5em 0.5em 0 0;
+}
+.boton-reinicio {
+    display: none;
+    padding: 0.5em 0 0 0.5em;
+}
+.Contacto-boton-envio {
+    width: 15em;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.75em;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--color-blanco);
+    background-color: var(--color-verde);
+    outline: 0px;
+}
+.Contacto-boton-otroEnvio {
+    display: none;
+    width: 15em;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.75em;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--color-blanco);
+    background-color: var(--color-verde);
+    outline: 0px;
+}
+.Contacto-boton-reinicio {
+    width: 15em;
+    border: none;
+    border-radius: 0.2em;
+    padding: 0.75em;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--color-blanco);
+    background-color: var(--color-rojo);
+    outline: 0px;
+}
+.Contacto-boton-envio:hover, .Contacto-boton-otroEnvio:hover {
+    background-color: var(--color-verde-oscuro);
+    color: var(--color-blanco);
+    font-weight: 300;
+    cursor: pointer;
+}
+.Contacto-boton-reinicio:hover {
+    background-color: var(--color-rojo-oscuro);
+    color: var(--color-blanco);
+    font-weight: 300;
+    cursor: pointer;
+}
+.Boton-borrar {
+    position: absolute;
+    right: 31%;
+    border: 0.07em solid var(--color-rojo);
+    border-radius: 0.2em;
+    padding: 0.2em 0.45em;
+    margin: 0em 0em;
+    font-weight: 300;
+    font-size: 0.75em;
+    text-decoration: none;
+    color: var(--color-blanco);
+    background-color: var(--color-rojo);
+    outline: 0px;
+}
+.Boton-borrar:hover {
+    background-color: var(--color-rojo-oscuro);
+    border: 0.07em solid var(--color-rojo-oscuro);
+    color: var(--color-blanco);
+    font-weight: 300;
+    cursor: pointer;
+}
+.error {
+    border-bottom: 0.07em solid var(--color-rojo);
+    padding: 0.75em;
+    height: 1em;
+    width: inherit;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 1.25em;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    color: var(--color-rojo);
+}
+.Contacto-boton-error::placeholder {
+    color: var(--color-rojo);
+}
+.menu-desplegable select {
+    width: 100%; 
+    height: 2.5em;
+    background-color: whitesmoke;
+    /* border: 0.075em solid var(--color-principal); */
+    border: none;
+    color: var(--color-gris);
+    border-radius: 0.2em;
+    padding: 0 2em 0 0.5em ;
+    margin: 0.15em 0em;
+    font-weight: 300;
+    font-size: 0.8em;
+    text-decoration: none;
+    text-overflow: '';
+    -webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+  
+.menu-desplegable:focus {
+    color: var(--color-principal-oscuro);
+    outline:none;
+    outline-width: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+hr, #hr {
+    color: var(--color-principal);    
+}
+
+.separador {
+    border:1px solid var(--color-principal);
+    margin-top: .5em;    
+}
+.textoBajadaBold {
+    color: var(--color-principal);
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 0.7em;
+    text-decoration: none;
+    padding: .75em 0 0 .75em;
+    line-height: 0.85em;
+}
+.textoBajada {
+    color: var(--color-principal);
+    background-color: transparent;
+    font-size: 0.7em;
+    text-decoration: none;
+    padding: 0 0 0 .75em;
+    font-weight: 300;
+}
+.textoObligatorio {
+    display: block;
+    color: var(--color-principal);
+    text-align: left;
+    padding: 0;
+    font-weight: 300;
+    font-size: 0.5em;
+}
+
+#valorCompra, #valorVenta {
+    display: inline-block;
+}
+
+/* FIN PLACA CONTACTO */
+
+/* INICIO PLACA INFO */
+
+.form-items {
+    border-top: 0.075em solid var(--color-principal);
+    background-color: transparent;
+    width: 40%;
+    height: auto;
+}
+.containerInfo {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.25em;
+    color:var(--color-principal);
+    margin: 0.5em;
+}
+.containerInfoBold {
+    font-weight: 700;
+}
+.containerInfoSmall {
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 1.25em;
+    color:var(--color-principal);
+}
+/* FIN PLACA INFO */
+
+/* INICIO FOOTER */
+
+.footer-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(90deg, var(--color-principal), var(--color-principal-oscuro));
+    bottom: 0px;
+}
+.footer-text-grande {
+    color: var(--color-blanco);
+    font-weight: 300;
+    font-size: 2.5em;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1em;
+    margin: 1.5% 5% 1% 5%;
+}
+.footer-text {
+    color: var(--color-blanco);
+    font-weight: 300;
+    font-size: 0.5em;
+    text-decoration: none;
+    text-align: justify;
+    line-height: 1.5em;
+    margin: 1% 25%;
+}
+
+/* FIN FOOTER */
+
+
+
+/* MEDIA CONTACTOS */
+
+@media only screen and (max-width: 800px){
+    .titulo {
+        font-size: 2.5em;
+        max-width: 85%;
+    }
+
+    .form-datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Contacto-form {
+        max-width: 85%;
+    }
+    .form-datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-items {
+        width: 72%;
+    }
+    .datos-usuario {
+        width: 85%;
+    }
+    .footer-text-grande {
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+    .footer-text {
+        font-size: 0.5em;
+        line-height: 1.5em;
+        margin: 1% 10%;
+    }
+    .Boton-borrar {
+        right: 15%;
+    }
+}
+
+
+/* MEDIA FOOTER */
+
+@media only screen and (max-width: 500px){
+    .footer-text {
+        font-size: 0.5em;
+        line-height: 1.5em;
+        margin: 1% 10%;
+    }
+}
+
+
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    font-weight: 400;
+    font-size: 0.75em;
+    visibility: hidden;
+    min-width: 30%;
+    max-width: 40%;
+    /* width: 10em; */
+    background-color: var(--color-rojo);
+    color: #fff;
+    text-align: center;
+    border-radius: 0.2em;
+    padding: 6px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -0.25em;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+
+  /* font-weight: 400;
+  font-size: 0.8em;
+  visibility: hidden;
+  width: 10em;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.2em;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -0.25em;
+  left: 50%;
+  margin-left: -70px; */
+
+
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: var(--color-rojo) transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    animation: fadeIn 1s;
+
+  }
+  .popup .hide {
+    visibility: hidden;
+    animation: fadeIn 1s;
+
+  }
+  
+  /* Add animation (fade in the popup) */
+ 
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+ 
+  
+  @keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity:0 ;}
+  }
